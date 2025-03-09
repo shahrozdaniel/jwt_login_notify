@@ -74,6 +74,20 @@ class AuthController extends Controller
 		}
 	}
 
+	public function index()
+	{
+		$user = Auth::user();
+
+		return response()->json([
+			'message' => 'Token is valid!',
+			'user' => [
+				'id' => $user->id,
+				'name' => $user->name,
+				'email' => $user->email,
+			],
+		]);
+	}
+
 	public function ping()
 	{
 		return response()->json(['message' => 'Pong!']);
