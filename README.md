@@ -124,24 +124,23 @@ This project is a Laravel-based API that implements JWT (JSON Web Token) authent
 	```
 
 #### Testing Token:
-3. **Test Protected Route**:
-   - **URL**: `/api/index`
-   - **Method**: `GET`
-   - **Headers**:
-     ```
-     Authorization: Bearer <your_jwt_token>
-     ```
-   - **Response**:
-     ```json
-     {
-       "message": "Token is valid!",
-       "user": {
-         "id": 1,
-         "name": "John Doe",
-         "email": "johndoe@example.com"
-       }
-     }
-     ```
+- **URL**: `/api/index`
+- **Method**: `GET`
+- **Headers**:
+	```
+	Authorization: Bearer <your_jwt_token>
+	```
+- **Response**:
+	```json
+	{
+		"message": "Token is valid!",
+		"user": {
+			"id": 1,
+			"name": "John Doe",
+			"email": "johndoe@example.com"
+		}
+	}
+	```
 
 ---
 
